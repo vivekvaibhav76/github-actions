@@ -11,6 +11,7 @@ jobs:
 
             - name: execute script to generate ASCII artwork
               run: |
+                  pwd
                   chmod +x ./ascii-script.sh
                   ./ascii-script.sh
 
