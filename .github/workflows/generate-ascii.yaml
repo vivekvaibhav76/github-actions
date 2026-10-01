@@ -10,7 +10,9 @@ jobs:
               uses: actions/checkout@v4
 
             - name: execute script to generate ASCII artwork
-              run: ./ascii-script.sh
+              run: |
+                  chmod +x ./ascii-script.sh
+                  ./ascii-script.sh
 
             # - name: List and read files
             #   run: |
